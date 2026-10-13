@@ -1,0 +1,45 @@
+{
+  "name": "aura-browser",
+  "version": "1.0.0",
+  "description": "A strict privacy-first browser shell with first-party-only networking",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "npm run check && electron-builder --mac",
+    "check": "node --check main.js && node --check preload.js && node --check content-preload.js && node --check renderer/renderer.js && node --check renderer/start.js && node --check website/js/main.js",
+    "test": "npm run check",
+    "dist": "electron-builder --mac"
+  },
+  "build": {
+    "appId": "com.aura.browser",
+    "productName": "Aura Browser",
+    "mac": {
+      "category": "public.app-category.productivity",
+      "target": [
+        "dmg",
+        "zip"
+      ]
+    },
+    "directories": {
+      "output": "dist"
+    }
+  },
+  "keywords": [
+    "privacy",
+    "browser",
+    "electron",
+    "zero-data"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "electron": "^42.0.1",
+    "electron-builder": "^26.8.1"
+  },
+  "dependencies": {
+    "@ghostery/adblocker-electron": "^2.17.0",
+    "cross-fetch": "^4.1.0",
+    "electron-store": "^11.0.2"
+  }
+}

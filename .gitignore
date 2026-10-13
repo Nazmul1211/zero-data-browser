@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+
+# Build and release output
+dist/
+build/
+out/
+
+# Test and coverage output
+coverage/
+.nyc_output/
+
+# Logs and local runtime data
+npm-debug.log*
+npm-error.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# OS and editor files
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
