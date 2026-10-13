@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aura Browser | Absolute Privacy</title>
+    <meta name="description" content="Aura Browser is the ultimate zero-data, privacy-first desktop browser. Featuring Tor routing, zero-disk caching, military-grade anti-fingerprinting, and 20+ hardened privacy shields.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="aura-bg"></div>
+
+    <nav>
+        <div class="logo">Aura</div>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#privacy-modes">Privacy Modes</a>
+            <a href="#protection">Protection</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#verify">Verify Privacy</a>
+            <a href="#download">Launch</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1 class="reveal">The Ultimate<br>Privacy Shield.</h1>
+        <p class="reveal">Aura Browser leaves absolutely no trace. Military-grade hardware isolation, mandatory Tor routing, zero-disk caching, and 20+ hardened anti-fingerprinting shields.</p>
+        <a href="#download" class="btn-primary reveal">Get Aura Browser</a>
+    </header>
+
+    <section id="features" class="features">
+        <h2 class="section-title reveal">Built for Absolute Stealth</h2>
+        <div class="features-grid">
+            <div class="feature-card reveal">
+                <div class="feature-icon">🧅</div>
+                <h3>Tor Kill-Switch</h3>
+                <p>Your IP is sacred. Aura forces all traffic through a secure Tor SOCKS5 proxy. If the tunnel drops, a red warning banner alerts you instantly — no silent clearnet fallback.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon">💾</div>
+                <h3>Zero-Disk Caching</h3>
+                <p>Most browsers secretly write gigabytes of temporary data to your hard drive. Aura's core is configured to physically bypass the OS disk. Everything exists purely in RAM.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon">👻</div>
+                <h3>20+ Anti-Fingerprinting Shields</h3>
+                <p>Canvas, AudioContext, WebRTC, Battery, Fonts, Screen Resolution, Timezone, Language, Device Memory, CPU Cores, Plugins — all spoofed or blocked. Websites see a generic, untraceable profile.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon">🛡️</div>
+                <h3>Ad & Tracker Annihilation</h3>
+                <p>Powered by the Ghostery engine and a strict first-party-only networking rule. UTM parameters are stripped, cross-site requests blocked, and all HTTP referers removed.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon">🔒</div>
+                <h3>Hardware Access Blocked</h3>
+                <p>Camera, microphone, geolocation, screen sharing — always denied, never prompted. WebBluetooth, WebUSB, WebHID, and WebSerial APIs are completely disabled at the Chromium level.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon">📡</div>
+                <h3>HTTP Header Sanitization</h3>
+                <p>Every outgoing request is scrubbed: Accept-Language forced to generic en-US, all Sec-CH-UA client hints stripped, Referrer removed, and Permissions-Policy headers injected on every response.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon">🧊</div>
+                <h3>Identity Containers</h3>
+                <p>Isolate your browsing into separate containers — Personal, Work, Banking, Shopping, or fully Anonymous. Each container has its own cookies, storage, and session — no cross-contamination.</p>
+            </div>
+            <div class="feature-card reveal">
+                <div class="feature-icon">🔥</div>
+                <h3>Panic Burn Button</h3>
+                <p>One click to nuke everything — all tabs, all sessions, all storage, and even your clipboard. Instant data destruction with zero recovery possible.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════ -->
+    <!-- SMART PRIVACY MODES SECTION                    -->
+    <!-- ══════════════════════════════════════════════ -->
+    <section id="privacy-modes" class="features privacy-modes-section">
+        <h2 class="section-title reveal">Smart Privacy Modes</h2>
+        <p class="verify-subtitle reveal">Choose your level of protection. Every mode still routes through Tor and applies baseline anti-fingerprinting — the tiers add layers on top.</p>
+
+        <!-- Mode Selector Tabs -->
+        <div class="mode-tabs reveal" id="modeTabs">
+            <button class="mode-tab active" data-mode="standard" id="tab-standard">
+                <span class="mode-tab-icon">🟢</span>
+                <span class="mode-tab-label">Standard</span>
+            </button>
+            <button class="mode-tab" data-mode="strong" id="tab-strong">
+                <span class="mode-tab-icon">🟡</span>
+                <span class="mode-tab-label">Strong</span>
+            </button>
+            <button class="mode-tab" data-mode="maximum" id="tab-maximum">
+                <span class="mode-tab-icon">🔴</span>
+                <span class="mode-tab-label">Maximum</span>
+            </button>
+        </div>
+
+        <!-- Mode Cards -->
+        <div class="mode-panels reveal">
+
+            <!-- STANDARD -->
+            <div class="mode-panel active" id="panel-standard">
+                <div class="mode-panel-left">
+                    <div class="mode-hero">
+                        <div class="shield-wrapper">
+                            <svg class="shield-svg" viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="shieldGradStandard" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#22c55e"/>
+                                        <stop offset="100%" style="stop-color:#16a34a"/>
+                                    </linearGradient>
+                                    <clipPath id="shieldClipStandard">
+                                        <path d="M60 5 L110 25 L110 70 C110 100 60 130 60 130 C60 130 10 100 10 70 L10 25 Z"/>
+                                    </clipPath>
+                                </defs>
+                                <path d="M60 5 L110 25 L110 70 C110 100 60 130 60 130 C60 130 10 100 10 70 L10 25 Z" fill="rgba(34,197,94,0.12)" stroke="rgba(34,197,94,0.5)" stroke-width="2"/>
+                                <rect x="10" y="70" width="100" height="60" fill="url(#shieldGradStandard)" clip-path="url(#shieldClipStandard)" opacity="0.35"/>
+                                <text x="60" y="78" text-anchor="middle" font-size="42" dominant-baseline="middle">🛡️</text>
+                            </svg>
+                        </div>
+                        <div class="mode-badge mode-badge-standard">Standard Privacy</div>
+                        <p class="mode-tagline">"Best balance for daily browsing"</p>
+                    </div>
+                    <div class="mode-speed">
+                        <span class="speed-label">Internet Speed Impact</span>
+                        <div class="speed-bar-track">
+                            <div class="speed-bar speed-bar-standard" style="--width:85%"></div>
+                        </div>
+                        <span class="speed-value">~Minimal — Full speed</span>
+                    </div>
+                </div>
+                <div class="mode-panel-right">
+                    <h3 class="mode-feature-title">What's Protected</h3>
+                    <ul class="mode-feature-list">
+                        <li class="mf-on"><span class="mf-icon">✅</span><span><strong>Tor Network Routing</strong> — Real IP hidden behind onion circuit</span></li>
+                        <li class="mf-on"><span class="mf-icon">✅</span><span><strong>WebRTC Leak Prevention</strong> — RTCPeerConnection fully disabled</span></li>
+                        <li class="mf-on"><span class="mf-icon">✅</span><span><strong>Hardware API Blocking</strong> — Camera, mic, geolocation, USB, Bluetooth all denied</span></li>
+                        <li class="mf-on"><span class="mf-icon">✅</span><span><strong>Hardware Spoofing</strong> — CPU cores=4, RAM=8 GB, OS=Win32 reported</span></li>
+                        <li class="mf-on"><span class="mf-icon">✅</span><span><strong>HTTP Header Sanitization</strong> — Referer stripped, Client Hints removed, DNT sent</span></li>
+                        <li class="mf-on"><span class="mf-icon">✅</span><span><strong>URL Tracking Cleaner</strong> — UTM, fbclid, gclid auto-removed from every URL</span></li>
+                        <li class="mf-on"><span class="mf-icon">✅</span><span><strong>Ad &amp; Tracker Annihilation</strong> — Ghostery engine + strict first-party-only networking</span></li>
+                        <li class="mf-on"><span class="mf-icon">✅</span><span><strong>HTTPS Enforcement</strong> — All HTTP auto-upgraded, zero cleartext allowed</span></li>
+                        <li class="mf-on"><span class="mf-icon">✅</span><span><strong>Zero Disk Cache</strong> — Disk and media cache set to 0 bytes</span></li>
+                        <li class="mf-off"><span class="mf-icon">⬜</span><span><strong>Canvas &amp; Audio Fingerprinting</strong> — Not spoofed in this mode</span></li>
+                        <li class="mf-off"><span class="mf-icon">⬜</span><span><strong>Screen &amp; Timezone Spoofing</strong> — Not active in this mode</span></li>
+                        <li class="mf-off"><span class="mf-icon">⬜</span><span><strong>Font Fingerprint Blocking</strong> — Not active in this mode</span></li>
+                        <li class="mf-off"><span class="mf-icon">⬜</span><span><strong>JavaScript Disabled (CSP)</strong> — Not active in this mode</span></li>
+                    </ul>
+                    <div class="mode-compatibility">
+                        <span class="compat-label">⚡ Site Compatibility</span>
+                        <div class="compat-dots">
+                            <span class="dot dot-on"></span><span class="dot dot-on"></span><span class="dot dot-on"></span><span class="dot dot-on"></span><span class="dot dot-on"></span>
+                        </div>
+                        <span class="compat-text">Excellent — virtually all sites work normally</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- STRONG -->
+            <div class="mode-panel" id="panel-strong">
+                <div class="mode-panel-left">
+                    <div class="mode-hero">
+                        <div class="shield-wrapper">
+                            <svg class="shield-svg" viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="shieldGradStrong" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#f59e0b"/>
+                                        <stop offset="100%" style="stop-color:#d97706"/>
+                                    </linearGradient>
+                                    <clipPath id="shieldClipStrong">
+                                        <path d="M60 5 L110 25 L110 70 C110 100 60 130 60 130 C60 130 10 100 10 70 L10 25 Z"/>
+                                    </clipPath>
+                                </defs>
+                                <path d="M60 5 L110 25 L110 70 C110 100 60 130 60 130 C60 130 10 100 10 70 L10 25 Z" fill="rgba(245,158,11,0.12)" stroke="rgba(245,158,11,0.5)" stroke-width="2"/>
+                                <rect x="10" y="35" width="100" height="95" fill="url(#shieldGradStrong)" clip-path="url(#shieldClipStrong)" opacity="0.35"/>
+                                <text x="60" y="78" text-anchor="middle" font-size="42" dominant-baseline="middle">🛡️</text>
+                            </svg>
+                        </div>
+                        <div class="mode-badge mode-badge-strong">Strong Privacy</div>
+                        <p class="mode-tagline">"Harder to track, some sites may break"</p>
+                    </div>
+                    <div class="mode-speed">
+                        <span class="speed-label">Internet Speed Impact</span>
+                        <div class="speed-bar-track">
+                            <div class="speed-bar speed-bar-strong" style="--width:65%"></div>
+                        </div>
+                        <span class="speed-value">~Moderate — Slightly reduced</span>
+                    </div>
+                </div>
+                <div class="mode-panel-right">
+                    <h3 class="mode-feature-title">What's Protected</h3>
+                    <ul class="mode-feature-list">
+                        <li class="mf-on"><span class="mf-icon">✅</span><span><strong>Everything in Standard</strong> — All baseline protections remain active</span></li>
+                        <li class="mf-new"><span class="mf-icon">🆕</span><span><strong>Canvas Fingerprinting Blocked</strong> — toDataURL &amp; getImageData return blank 1×1 pixel</span></li>
+                        <li class="mf-new"><span class="mf-icon">🆕</span><span><strong>Audio Fingerprinting Blocked</strong> — AudioBuffer.getChannelData returns zeroed silence</span></li>
+                        <li class="mf-new"><span class="mf-icon">🆕</span><span><strong>Screen Resolution Spoofed</strong> — Reported as generic 1920×1080</span></li>
+                        <li class="mf-new"><span class="mf-icon">🆕</span><span><strong>Timezone Locked to UTC</strong> — Intl.DateTimeFormat overridden to prevent locale leak</span></li>
+                        <li class="mf-new"><span class="mf-icon">🆕</span><span><strong>Font Fingerprint Blocked</strong> — document.fonts returns empty stub, no font detection</span></li>
+                        <li class="mf-off"><span class="mf-icon">⬜</span><span><strong>JavaScript Disabled (CSP)</strong> — Not active in this mode</span></li>
+                    </ul>
+                    <div class="mode-compatibility">
+                        <span class="compat-label">⚡ Site Compatibility</span>
+                        <div class="compat-dots">
+                            <span class="dot dot-on"></span><span class="dot dot-on"></span><span class="dot dot-on"></span><span class="dot dot-on"></span><span class="dot dot-off"></span>
+                        </div>
+                        <span class="compat-text">Good — canvas-heavy sites may behave differently</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MAXIMUM -->
+            <div class="mode-panel" id="panel-maximum">
+                <div class="mode-panel-left">
+                    <div class="mode-hero">
+                        <div class="shield-wrapper">
+                            <svg class="shield-svg" viewBox="0 0 120 140" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="shieldGradMaximum" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#ef4444"/>
+                                        <stop offset="100%" style="stop-color:#b91c1c"/>
+                                    </linearGradient>
+                                    <clipPath id="shieldClipMaximum">
+                                        <path d="M60 5 L110 25 L110 70 C110 100 60 130 60 130 C60 130 10 100 10 70 L10 25 Z"/>
+                                    </clipPath>
+                                </defs>
+                                <path d="M60 5 L110 25 L110 70 C110 100 60 130 60 130 C60 130 10 100 10 70 L10 25 Z" fill="rgba(239,68,68,0.12)" stroke="rgba(239,68,68,0.6)" stroke-width="2"/>
+                                <rect x="10" y="5" width="100" height="125" fill="url(#shieldGradMaximum)" clip-path="url(#shieldClipMaximum)" opacity="0.35"/>
+                                <text x="60" y="78" text-anchor="middle" font-size="42" dominant-baseline="middle">🛡️</text>
+                            </svg>
+                        </div>
+                        <div class="mode-badge mode-badge-maximum">Maximum Anonymity</div>
+                        <p class="mode-tagline">"Maximum anonymity, slower browsing expected"</p>
+                    </div>
+                    <div class="mode-speed">
+                        <span class="speed-label">Internet Speed Impact</span>
+                        <div class="speed-bar-track">
+                            <div class="speed-bar speed-bar-maximum" style="--width:30%"></div>
+                        </div>
+                        <span class="speed-value">~High impact — JS-heavy sites will break</span>
+                    </div>
+                </div>
+                <div class="mode-panel-right">
+                    <h3 class="mode-feature-title">What's Protected</h3>
+                    <ul class="mode-feature-list">
+                        <li class="mf-on"><span class="mf-icon">✅</span><span><strong>Everything in Standard + Strong</strong> — All prior protections remain active</span></li>
+                        <li class="mf-new mf-critical"><span class="mf-icon">🔴</span><span><strong>JavaScript Completely Disabled</strong> — CSP <code>script-src 'none'</code> injected on every response</span></li>
+                    </ul>
+                    <div class="mode-explainer">
+                        <h4>⚠️ Why does this feel slower?</h4>
+                        <p>When JavaScript is disabled, modern websites cannot execute the code they need to fetch data, render content, or respond to your clicks. Pages appear blank or stuck — this is <strong>not</strong> a network speed issue; it's the browser doing its job by blocking all scripting. Use this mode only for reading static pages or when maximum threat protection is required.</p>
+                    </div>
+                    <div class="mode-compatibility">
+                        <span class="compat-label">⚡ Site Compatibility</span>
+                        <div class="compat-dots">
+                            <span class="dot dot-on"></span><span class="dot dot-off"></span><span class="dot dot-off"></span><span class="dot dot-off"></span><span class="dot dot-off"></span>
+                        </div>
+                        <span class="compat-text">Limited — most modern sites will not function</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ══════════════════════════════════════════════ -->
+
+    <section id="protection" class="features">
+        <h2 class="section-title reveal">What We Block</h2>
+        <div class="setup-guide reveal">
+            <div class="protection-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Attack Vector</th>
+                            <th>Status</th>
+                            <th>How</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>WebRTC IP Leak</td><td class="status-blocked">Blocked</td><td>Chromium flag + JavaScript proxy trap</td></tr>
+                        <tr><td>Geolocation</td><td class="status-blocked">Blocked</td><td>Always denied, API frozen</td></tr>
+                        <tr><td>Camera & Microphone</td><td class="status-blocked">Blocked</td><td>Always denied, getUserMedia rejects</td></tr>
+                        <tr><td>Screen Sharing</td><td class="status-blocked">Blocked</td><td>Always denied, getDisplayMedia rejects</td></tr>
+                        <tr><td>Canvas Fingerprint</td><td class="status-spoofed">Spoofed</td><td>Returns generic 1×1 pixel</td></tr>
+                        <tr><td>Audio Fingerprint</td><td class="status-spoofed">Spoofed</td><td>getChannelData returns zeroed buffer</td></tr>
+                        <tr><td>Battery Status</td><td class="status-blocked">Blocked</td><td>API returns rejected promise</td></tr>
+                        <tr><td>Device Enumeration</td><td class="status-blocked">Blocked</td><td>Returns empty array</td></tr>
+                        <tr><td>Bluetooth/USB/HID/Serial</td><td class="status-blocked">Blocked</td><td>APIs removed from navigator object</td></tr>
+                        <tr><td>CPU & RAM Fingerprint</td><td class="status-spoofed">Spoofed</td><td>hardwareConcurrency=4, deviceMemory=8</td></tr>
+                        <tr><td>Language & Locale</td><td class="status-spoofed">Spoofed</td><td>Forced to en-US at Chromium + header level</td></tr>
+                        <tr><td>Timezone</td><td class="status-spoofed">Spoofed</td><td>Intl.DateTimeFormat defaults to UTC</td></tr>
+                        <tr><td>Screen Resolution</td><td class="status-spoofed">Spoofed</td><td>Reported as 1920×1080</td></tr>
+                        <tr><td>Font Fingerprint</td><td class="status-blocked">Blocked</td><td>document.fonts returns empty stub</td></tr>
+                        <tr><td>Client Hints (Sec-CH-UA)</td><td class="status-blocked">Blocked</td><td>Stripped from all HTTP requests</td></tr>
+                        <tr><td>HTTP Referrer</td><td class="status-blocked">Blocked</td><td>Stripped + Referrer-Policy: no-referrer injected</td></tr>
+                        <tr><td>Tracking Parameters</td><td class="status-blocked">Blocked</td><td>UTM, fbclid, gclid automatically removed from URLs</td></tr>
+                        <tr><td>Third-Party Requests</td><td class="status-blocked">Blocked</td><td>Strict first-party-only networking</td></tr>
+                        <tr><td>HTTP Downgrade</td><td class="status-blocked">Blocked</td><td>All HTTP auto-upgraded to HTTPS</td></tr>
+                        <tr><td>Reader Mode XSS</td><td class="status-blocked">Blocked</td><td>Full content sanitization before injection</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works" class="how-it-works">
+        <h2 class="section-title reveal">How it Works</h2>
+        <div class="setup-guide reveal">
+            <p>Aura isn't just a browser; it's a hardened Electron shell designed specifically for zero-data retention. Here is what happens when you launch a session:</p>
+            <br>
+            <ul style="list-style-position: inside; color: var(--text-secondary); line-height: 2;">
+                <li><strong>Ephemeral Partitions:</strong> A temporary partition is generated dynamically — destroyed on quit.</li>
+                <li><strong>WebRTC Lockdown:</strong> WebRTC is fully disabled at both the Chromium and JavaScript level.</li>
+                <li><strong>Strict HTTPS Upgrade:</strong> Unsecured HTTP requests are forcefully upgraded or dropped.</li>
+                <li><strong>Header Sanitization:</strong> Accept-Language, Sec-CH-UA client hints, and Referer headers are stripped or spoofed on every request.</li>
+                <li><strong>Permissions-Policy Injection:</strong> Every response gets a Permissions-Policy header blocking camera, mic, geo, battery, and more.</li>
+                <li><strong>20+ Fingerprint Shields:</strong> Defensive scripts spoof Canvas, Audio, Screen, Font, Timezone, and Hardware APIs.</li>
+                <li><strong>Content Security Policy:</strong> Strict CSP on the browser chrome prevents injection attacks.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="verify" class="features">
+        <h2 class="section-title reveal">Verify Your Privacy</h2>
+        <p class="verify-subtitle reveal">Don't just take our word for it. Test Aura against these industry-standard privacy analysis tools:</p>
+        <div class="features-grid verify-grid">
+            <a href="https://browserleaks.com/webrtc" target="_blank" rel="noopener noreferrer" class="feature-card verify-card reveal">
+                <div class="feature-icon">🌐</div>
+                <h3>WebRTC Leak Test</h3>
+                <p>Verify that your real IP address is not exposed through WebRTC. Aura should show <strong>"No WebRTC"</strong> or only the Tor exit node IP.</p>
+                <span class="verify-link">browserleaks.com/webrtc →</span>
+            </a>
+            <a href="https://browserleaks.com/canvas" target="_blank" rel="noopener noreferrer" class="feature-card verify-card reveal">
+                <div class="feature-icon">🎨</div>
+                <h3>Canvas Fingerprint Test</h3>
+                <p>Confirm that Aura spoofs your Canvas fingerprint. You should see a <strong>generic, non-unique</strong> canvas signature.</p>
+                <span class="verify-link">browserleaks.com/canvas →</span>
+            </a>
+            <a href="https://browserleaks.com/geo" target="_blank" rel="noopener noreferrer" class="feature-card verify-card reveal">
+                <div class="feature-icon">📍</div>
+                <h3>Geolocation Test</h3>
+                <p>Verify that geolocation access is <strong>immediately denied</strong>. No prompt, no location data leaked — ever.</p>
+                <span class="verify-link">browserleaks.com/geo →</span>
+            </a>
+            <a href="https://amiunique.org" target="_blank" rel="noopener noreferrer" class="feature-card verify-card reveal">
+                <div class="feature-icon">🔎</div>
+                <h3>Am I Unique?</h3>
+                <p>Check your overall browser fingerprint uniqueness score. Aura's spoofing should make you <strong>blend in with the crowd</strong>.</p>
+                <span class="verify-link">amiunique.org →</span>
+            </a>
+            <a href="https://coveryourtracks.eff.org" target="_blank" rel="noopener noreferrer" class="feature-card verify-card reveal">
+                <div class="feature-icon">🛡️</div>
+                <h3>EFF Cover Your Tracks</h3>
+                <p>The Electronic Frontier Foundation's comprehensive tracker test. Verify <strong>strong tracking protection</strong> and reduced fingerprint surface.</p>
+                <span class="verify-link">coveryourtracks.eff.org →</span>
+            </a>
+            <a href="https://adblock.turtlecute.org/" target="_blank" rel="noopener noreferrer" class="feature-card verify-card benchmark-card reveal">
+                <div class="feature-icon">📊</div>
+                <h3>AdBlock Tracker Benchmark</h3>
+                <p>According to adblock.turtlecute.org, Aura blocks <strong>75–77% of ads and trackers</strong> in real browsing conditions.</p>
+                <div class="benchmark-list" aria-label="Ad and tracker blocking comparison">
+                    <div class="benchmark-row benchmark-row-aura">
+                        <span class="benchmark-browser">Aura Browser</span>
+                        <span class="benchmark-value">75–77%</span>
+                    </div>
+                    <div class="benchmark-row benchmark-row-brave">
+                        <span class="benchmark-browser">Brave</span>
+                        <span class="benchmark-value">63%</span>
+                    </div>
+                    <div class="benchmark-row benchmark-row-chrome">
+                        <span class="benchmark-browser">Google Chrome</span>
+                        <span class="benchmark-value">9%</span>
+                    </div>
+                    <div class="benchmark-row benchmark-row-safari">
+                        <span class="benchmark-browser">Safari</span>
+                        <span class="benchmark-value">7%</span>
+                    </div>
+                    <div class="benchmark-row benchmark-row-edge">
+                        <span class="benchmark-browser">Microsoft Edge</span>
+                        <span class="benchmark-value">8%</span>
+                    </div>
+                </div>
+                <span class="verify-link">adblock.turtlecute.org →</span>
+            </a>
+            <a href="https://browserleaks.com/fonts" target="_blank" rel="noopener noreferrer" class="feature-card verify-card reveal">
+                <div class="feature-icon">🔤</div>
+                <h3>Font Fingerprint Test</h3>
+                <p>Confirm that Aura blocks font enumeration. Websites should <strong>not detect your installed system fonts</strong>.</p>
+                <span class="verify-link">browserleaks.com/fonts →</span>
+            </a>
+        </div>
+    </section>
+
+    <section id="download" class="download">
+        <h2 class="section-title reveal">Launch Aura Browser</h2>
+        <div class="setup-guide reveal">
+            <div class="step">
+                <h3><span class="step-number">1</span> Install Tor (One-time Setup)</h3>
+                <p>Aura uses Tor to hide your IP. It automatically manages the connection, but you must have the Tor binary installed on your Mac. Run this once:</p>
+                <div class="code-block">
+                    brew install tor
+                </div>
+            </div>
+            <div class="step">
+                <h3><span class="step-number">2</span> Launch the Browser</h3>
+                <p>Aura will automatically detect your Tor installation, spin up a secure proxy tunnel, and tear it down when you quit the browser!</p>
+                <div class="code-block">
+                    npm start
+                </div>
+                <p style="margin-top: 15px;">Or compile the standalone macOS Application using our build script:</p>
+                <div class="code-block">
+                    npm run dist
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Aura Browser &mdash; 100% Privacy-First Open Source Software. Built with love, zero tracking.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
